@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "image": "images/img 1.jpg",
+    "title": "Beautiful Apartment",
+    "price": 100,
+    "description": "A lovely place in the city center."
+  },
+  {
+    "id": "2",
+    "image": "https://www.designcafe.com/wp-content/uploads/2021/11/living-cum-bedroom-cozy-apartment-ideas.jpg",
+    "title": "Cozy Apartment",
+    "price": 120,
+    "description": "A nice place to stay..."
+  },
+  {
+    "id": "3",
+    "image": "images/img 3.jpg",
+    "title": "Cozy Cottage",
+    "price": 90,
+    "description": "Rustic and charming."
+  },
+  {
+    "id": "4",
+    "image": "images/img 5.avif",
+    "title": "City Apartment",
+    "price": 150,
+    "description": "Modern apartment downtown."
+  },
+  {
+    "id": "5",
+    "image": "images/img 4.jpg",
+    "title": "Modern Loft",
+    "price": 150,
+    "description": "Spacious loft with style."
+  },
+  {
+    "id": "6",
+    "image": "images/img 6.jpg",
+    "title": "Beach House",
+    "price": 200,
+    "description": "Relaxing ocean views."
+  }
+]

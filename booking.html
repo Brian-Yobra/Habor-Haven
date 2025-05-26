@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking</title>
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Booking</h1>
+    <img id="booking-image" src="" alt="Listing Image" />
+    <h2 id="booking-title"></h2>
+    <p id="booking-price"></p>
+    <form id="booking-form">
+      <label>
+        Your Name:
+        <input type="text" id="name" required />
+      </label>
+      <label>
+        Your Phone Number:
+        <input type="Number" id="phone" required />
+      </label>
+      <label>
+        Check-in Date:
+        <input type="date" id="checkin" required />
+      </label>
+      <label>
+        Check-out Date:
+        <input type="date" id="checkout" required />
+      </label>
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <a href="index.html">← Back to listings</a>
+  </div>
+  
+  <!-- Modal structure -->
+<div id="confirmation-modal" class="modal">
+  <div class="modal-content">
+    <p>Thank you! Your booking has been confirmed.</p>
+    <button id="close-modal">Close</button>
+  </div>
+</div>
+
+  <script src="booking.js"></script>
+</body>
+</html>
