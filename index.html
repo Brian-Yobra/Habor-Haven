@@ -1,3 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habor-Haven | Find Your Next Stay</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">HaborHaven</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-bookings.html">My Bookings</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Find a place to stay</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for cities, homes, or experiences...">
+    </div>
+    <div class="categories-container">
+      <div class="categories" id="categories-bar">
+        <button class="category-chip active" data-category="All">All</button>
+        <button class="category-chip" data-category="Apartment">Apartments</button>
+        <button class="category-chip" data-category="Cottage">Cottages</button>
+        <button class="category-chip" data-category="Modern">Modern</button>
+        <button class="category-chip" data-category="Beach">Beachfront</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="listings" class="listings"></section>
+
+    <section class="image-scroll-gallery">
+      <h3 style="margin-bottom: 1rem;">Popular Destinations</h3>
+      <div class="image-row" id="image-gallery"></div>
+    </section>
+  </main>
+
   <script type="module" src="js/pages/index.js"></script>
 </body>
 </html>
