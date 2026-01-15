@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bookings | HaborHaven</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/my-bookings.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">HaborHaven</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-bookings.html">My Bookings</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="bookings-page">
+    <div class="header-section">
+      <h1>My Bookings</h1>
+      <p>Keep track of your upcoming stays and adventures.</p>
+    </div>
+
+    <div id="bookings-list" class="bookings-grid">
+    </div>
+
+    <div id="no-bookings" class="empty-state" style="display: none;">
+      <div class="empty-icon">H</div>
+      <h2>No bookings found</h2>
+      <p>Looks like you haven't booked anything yet. Start exploring!</p>
+      <a href="index.html" class="browse-btn">Browse listings</a>
+    </div>
+  </main>
+
+  <script type="module" src="js/pages/my-bookings.js"></script>
+</body>
+</html>

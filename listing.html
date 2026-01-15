@@ -3,19 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Listing Details</title>
-  <link rel="stylesheet" href="listing.css" />
+  <title>Property Details | HaborHaven</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/listing.css" />
 </head>
 <body>
-  <div class="container">
-    <img id="image" src="" alt="Listing Image" />
-    <h1 id="title">Loading...</h1>
-    <div class="price" id="price"></div>
-    <p class="description" id="description"></p>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">HaborHaven</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-bookings.html">My Bookings</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <a href="index.html" class="back-link">← Back to listings</a>
-  </div>
+  <main class="listing-container">
+    <div class="listing-header">
+        <h1 id="title">Loading...</h1>
+        <div class="listing-meta">
+            <span class="price" id="price"></span>
+        </div>
+    </div>
 
-  <script src="listing.js"></script>
+    <div class="listing-grid">
+        <div class="listing-gallery">
+            <img id="image" src="" alt="Listing Image" />
+        </div>
+        <div class="listing-sidebar">
+            <div class="sidebar-card">
+              <h3>Description</h3>
+              <p class="description" id="description"></p>
+              <div id="booking-cta"></div>
+              <a href="index.html" class="back-link">Return to Search</a>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <script type="module" src="js/pages/listing.js"></script>
 </body>
 </html>

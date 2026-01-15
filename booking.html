@@ -3,45 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Booking</title>
-  <link rel="stylesheet" href="booking.css" />
+  <title>Complete Your Booking | HaborHaven</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/booking.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Booking</h1>
-    <img id="booking-image" src="" alt="Listing Image" />
-    <h2 id="booking-title"></h2>
-    <p id="booking-price"></p>
-    <form id="booking-form">
-      <label>
-        Your Name:
-        <input type="text" id="name" required />
-      </label>
-      <label>
-        Your Phone Number:
-        <input type="Number" id="phone" required />
-      </label>
-      <label>
-        Check-in Date:
-        <input type="date" id="checkin" required />
-      </label>
-      <label>
-        Check-out Date:
-        <input type="date" id="checkout" required />
-      </label>
-      <button type="submit">Confirm Booking</button>
-    </form>
-    <a href="index.html">← Back to listings</a>
-  </div>
-  
-  <!-- Modal structure -->
-<div id="confirmation-modal" class="modal">
-  <div class="modal-content">
-    <p>Thank you! Your booking has been confirmed.</p>
-    <button id="close-modal">Close</button>
-  </div>
-</div>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" style="color: var(--primary); font-size: 1.5rem; font-weight: 800;">HaborHaven</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-bookings.html">My Bookings</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <script src="booking.js"></script>
+  <main class="booking-container">
+    <div class="booking-card">
+        <h1>Confirm your booking</h1>
+        
+        <div class="booking-summary">
+            <img id="booking-image" src="" alt="Listing Image" />
+            <div class="summary-details">
+                <h2 id="booking-title"></h2>
+                <p id="booking-price"></p>
+            </div>
+        </div>
+
+        <form id="booking-form">
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" id="name" placeholder="John Doe" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" id="phone" placeholder="+1..." required />
+            </label>
+            <label>
+              Check-in Date
+              <input type="date" id="checkin" required />
+            </label>
+            <label>
+              Check-out Date
+              <input type="date" id="checkout" required />
+            </label>
+          </div>
+          <button type="submit" class="submit-btn">Confirm and Pay</button>
+        </form>
+        
+        <div id="confirmation" class="confirmation-text"></div>
+        <a href="index.html" class="back-link">Cancel and return</a>
+    </div>
+  </main>
+  
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <div class="success-icon">V</div>
+      <h2>Booking Confirmed!</h2>
+      <p>Thank you for choosing HaborHaven. Your stay is being prepared.</p>
+      <button id="close-modal">Great!</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/pages/booking.js"></script>
 </body>
 </html>
